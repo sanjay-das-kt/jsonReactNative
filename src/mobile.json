@@ -1,0 +1,73 @@
+{
+    "menus": [
+        {
+            "NAME" : "Home",
+            "LABEL": "Home",
+			"TYPE": "static",
+			"CONTENT": "This Is KrazyTech Home Page"
+        },
+        {
+            "NAME" : "About Us",
+            "LABEL": "About Us",
+			"TYPE": "static",
+			"CONTENT": "This Is KrazyTech About Us Page"
+        },
+        {
+            "NAME" : "SignIn",
+            "LABEL": "Sign In",
+			"TYPE": "form",
+			"CONTENT": {
+				"FORM_ID": "1",
+				"FORM_CONFIG": [
+                    {
+                        "FIELD_LABEL": "Email\/Mobile",
+                        "FIELD_NAME": "Username__c",
+                        "FIELD_TYPE": "text",
+                        "FIELD_VALIDATION": "required",
+                        "FIELD_OPTIONS": []
+				    }, 
+                    {
+					"FIELD_LABEL": "Password",
+					"FIELD_NAME": "Password__c",
+					"FIELD_TYPE": "password",
+					"FIELD_VALIDATION": "required",
+					"FIELD_OPTIONS": []
+				    }
+                ]
+			}
+        },
+        {
+            "NAME" : "Registration",
+            "LABEL": "Registration",
+			"TYPE": "form",
+			"CONTENT": {
+				"FORM_ID": "2",
+				"FORM_CONFIG": [{
+					"FIELD_LABEL": "Name",
+					"FIELD_NAME": "Name__c",
+					"FIELD_TYPE": "text",
+					"FIELD_VALIDATION": "required",
+					"FIELD_OPTIONS": []
+				}, {
+					"FIELD_LABEL": "Email",
+					"FIELD_NAME": "Email__c",
+					"FIELD_TYPE": "text",
+					"FIELD_VALIDATION": "required|email",
+					"FIELD_OPTIONS": []
+				}, {
+					"FIELD_LABEL": "Phone",
+					"FIELD_NAME": "Phone__c",
+					"FIELD_TYPE": "text",
+					"FIELD_VALIDATION": "required|mobile",
+					"FIELD_OPTIONS": []
+				}, {
+					"FIELD_LABEL": "Password",
+					"FIELD_NAME": "Password__c",
+					"FIELD_TYPE": "password",
+					"FIELD_VALIDATION": "required",
+					"FIELD_OPTIONS": []
+				}]
+			}
+        }
+    ]
+}
